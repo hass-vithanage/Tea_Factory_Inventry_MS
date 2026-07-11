@@ -20,6 +20,30 @@ abstract class InventoryItem {
     public abstract double calculateItemValue();
 }
 
+// Child Class 1: Raw Tea Leaf
+class RawTeaLeaf extends InventoryItem {
+    private double moisturePercentage;
+
+    public RawTeaLeaf(String itemId, String itemName, double quantityKg, double moisturePercentage) {
+        super(itemId, itemName, quantityKg);
+        this.moisturePercentage = moisturePercentage;
+    }
+
+    @Override
+    public void displayStorageInstructions() {
+        System.out.println("Storage: Send to withering troughs within 4 hours.");
+    }
+
+    @Override
+    public double calculateItemValue() {
+        double basePrice = getQuantityKg() * 300.0; // Fixed flat rate
+        if (moisturePercentage > 15.0) {
+            return basePrice * 0.90; // Simple 10% penalty
+        }
+        return basePrice;
+    }
+}
+
 
 
 
