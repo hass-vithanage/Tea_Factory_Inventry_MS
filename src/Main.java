@@ -8,6 +8,10 @@ abstract class InventoryItem {
         this.itemName = itemName;
         this.quantityKg = quantityKg;
     }
+
+    public String getItemId() { return itemId; }
+    public String getItemName() { return itemName; }
+    public double getQuantityKg() { return quantityKg; }
 }
 
 
