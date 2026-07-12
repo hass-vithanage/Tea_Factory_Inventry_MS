@@ -44,6 +44,16 @@ class RawTeaLeaf extends InventoryItem {
     }
 }
 
+// Child Class 2: Bulk Tea Grade
+class BulkTeaGrade extends InventoryItem {
+    private String teaGrade;
+    private boolean isExportQuality;
+
+    public BulkTeaGrade(String itemId, String itemName, double quantityKg, String teaGrade, boolean isExportQuality) {
+        super(itemId, itemName, quantityKg);
+        this.teaGrade = teaGrade;
+        this.isExportQuality = isExportQuality;
+    }
 
 
 
