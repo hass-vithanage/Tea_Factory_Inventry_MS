@@ -80,5 +80,12 @@ class PackagingMaterial extends InventoryItem {
         this.unitCost = unitCost;
     }
 
+    @Override
+    public void displayStorageInstructions() {
+        System.out.println("Storage: Keep in a dry, fire-restricted warehouse zone.");
+    }
+
+
+}
 
 
