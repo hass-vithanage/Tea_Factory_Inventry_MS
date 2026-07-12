@@ -60,6 +60,15 @@ class BulkTeaGrade extends InventoryItem {
         System.out.println("Storage: Store in airtight, aluminum-lined paper sacks.");
     }
 
+    @Override
+    public double calculateItemValue() {
+        double pricePerKg = 1200.0; // Flat rate for all grades
+        double basePrice = getQuantityKg() * pricePerKg;
+        if (isExportQuality) {
+            return basePrice * 1.25; // 25% export premium
+        }
+        return basePrice;
+    }
 
 }
 
