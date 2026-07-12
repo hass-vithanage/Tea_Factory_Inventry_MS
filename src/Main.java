@@ -92,7 +92,7 @@ class PackagingMaterial extends InventoryItem {
 }
 
 // Driver Class
-public class MainManual {
+public class Main {
     public static void main(String[] args) {
 
     }
