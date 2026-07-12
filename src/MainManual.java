@@ -91,4 +91,10 @@ class PackagingMaterial extends InventoryItem {
     }
 }
 
+// Driver Class
+public class MainManual {
+    public static void main(String[] args) {
+
+    }
+}
 
