@@ -69,9 +69,16 @@ class BulkTeaGrade extends InventoryItem {
         }
         return basePrice;
     }
-
 }
 
+// Child Class 3: Packaging Material
+class PackagingMaterial extends InventoryItem {
+    private double unitCost;
+
+    public PackagingMaterial(String itemId, String itemName, double quantityUnits, double unitCost) {
+        super(itemId, itemName, quantityUnits);
+        this.unitCost = unitCost;
+    }
 
 
 
