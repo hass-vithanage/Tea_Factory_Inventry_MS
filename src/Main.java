@@ -100,6 +100,8 @@ public class Main {
         inventory[2] = new PackagingMaterial("PKG-303", "Wooden Boxes", 200, 150.0);
 
         double totalValue = 0;
+
+        System.out.println("=== TEA FACTORY INVENTORY REPORT (MANUAL) ===")
     }
 }
 
