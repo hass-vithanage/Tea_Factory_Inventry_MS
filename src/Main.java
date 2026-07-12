@@ -94,7 +94,12 @@ class PackagingMaterial extends InventoryItem {
 // Driver Class
 public class Main {
     public static void main(String[] args) {
+        InventoryItem[] inventory = new InventoryItem[3];
+        inventory[0] = new RawTeaLeaf("RAW-001", "Green Leaves", 1000, 18.5);
+        inventory[1] = new BulkTeaGrade("BLK-202", "BOPF Premium", 500, "BOPF", true);
+        inventory[2] = new PackagingMaterial("PKG-303", "Wooden Boxes", 200, 150.0);
 
+        double totalValue = 0;
     }
 }
 
