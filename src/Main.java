@@ -101,7 +101,17 @@ public class Main {
 
         double totalValue = 0;
 
-        System.out.println("=== TEA FACTORY INVENTORY REPORT (MANUAL) ===")
+        System.out.println("=== TEA FACTORY INVENTORY REPORT (MANUAL) ===");
+
+        // for-loop
+        for (int i = 0; i < inventory.length; i++) {
+            System.out.println("\nID: " + inventory[i].getItemId() + " | Name: " + inventory[i].getItemName());
+            inventory[i].displayStorageInstructions();
+            double val = inventory[i].calculateItemValue();
+            System.out.println("Valuation: " + val + " LKR");
+            totalValue += val;
+        }
+        System.out.println("\nTotal Warehouse Valuation: " + totalValue + " LKR");
     }
 }
 
