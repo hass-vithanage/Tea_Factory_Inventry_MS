@@ -85,7 +85,10 @@ class PackagingMaterial extends InventoryItem {
         System.out.println("Storage: Keep in a dry, fire-restricted warehouse zone.");
     }
 
-
+    @Override
+    public double calculateItemValue() {
+        return getQuantityKg() * unitCost; // Quantity tracks units here
+    }
 }
 
 
