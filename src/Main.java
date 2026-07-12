@@ -55,6 +55,14 @@ class BulkTeaGrade extends InventoryItem {
         this.isExportQuality = isExportQuality;
     }
 
+    @Override
+    public void displayStorageInstructions() {
+        System.out.println("Storage: Store in airtight, aluminum-lined paper sacks.");
+    }
+
+
+}
+
 
 
 
