@@ -39,7 +39,6 @@ abstract class InventoryItem {
 }
 
 
-
 class RawTeaLeaf extends InventoryItem {
 
     private static final double PRICE_PER_KG = 300;
@@ -65,7 +64,6 @@ class RawTeaLeaf extends InventoryItem {
         return moisturePercentage > 15 ? value * 0.90 : value;
     }
 }
-
 
 
 class BulkTeaGrade extends InventoryItem {
@@ -98,7 +96,6 @@ class BulkTeaGrade extends InventoryItem {
 }
 
 
-
 class PackagingMaterial extends InventoryItem {
 
     private final double unitCost;
@@ -122,7 +119,6 @@ class PackagingMaterial extends InventoryItem {
         return getQuantity() * unitCost;
     }
 }
-
 
 
 public class MainAI_Assised {
@@ -151,7 +147,6 @@ public class MainAI_Assised {
                 150));
 
 
-
         System.out.println("=== TEA FACTORY INVENTORY REPORT (AI ASSISTED) ===");
 
         for (InventoryItem item : inventory) {
@@ -168,7 +163,6 @@ public class MainAI_Assised {
             System.out.printf("Valuation: %.1f LKR%n",
                     item.calculateItemValue());
         }
-
 
 
         double totalValue = inventory.stream()
